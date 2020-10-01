@@ -16,6 +16,7 @@ import SetRole from "./developer/SetRole";
 // General
 import Help from "./general/Help";
 import Ping from "./general/Ping";
+import ServerInformation from "./general/ServerInformation";
 import Suggestion from "./general/Suggestion";
 
 /**
@@ -43,6 +44,7 @@ class CommandsManager {
     // General commands
     this.commands.push(new Help());
     this.commands.push(new Ping());
+    this.commands.push(new ServerInformation());
     this.commands.push(new Suggestion());
   }
 
