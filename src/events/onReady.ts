@@ -7,17 +7,18 @@
  * @format
  */
 
-import Bot from '@Bot';
+import Bot from "@Bot";
 
 /**
  * On bot ready event.
- * 
+ *
  * @function
  * @param { Bot } bot
  * @returns { void }
  */
 function onReady(bot: Bot): void {
-  console.log(`${bot.getClient().user?.username} connected!`);
+  const { user } = bot.getClient();
+  if (user) console.log(`${user.tag} connected!`);
 }
 
 export default onReady;
